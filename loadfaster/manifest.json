@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Load Faster",
+    "version": "1.0",
+    "permissions": [
+        "declarativeNetRequestWithHostAccess"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    }
+}
