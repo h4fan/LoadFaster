@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "regexSubstitution": "https://cdnjs.cloudflare.com/ajax/libs/firebase/\\2"
+            }
+        },
+        "condition": {
+            "regexFilter": "^https://www\\.gstatic\\.com/(firebasejs)/(.*)",
+            "requestDomains": ["www.gstatic.com"],
+            "resourceTypes": [
+                "script"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "block"
+           
+        },
+        "condition": {
+            "urlFilter": "https://fonts.gstatic.com/",
+            "resourceTypes": [
+                "font"
+            ]
+        }
+    }
+
+]
